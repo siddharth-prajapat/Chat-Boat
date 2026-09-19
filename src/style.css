@@ -1,0 +1,232 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    background-color: white;        
+    width: 700px;
+    box-shadow: 20px 10px 160px;
+    color: rgba(0,0,255,0.5);
+    height: 680px;
+        max-height: 650px;  /* yeh line add karke try karo */
+    overflow: hidden; 
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+    border-radius: 20px;
+    background-image: url('theme1.jpg');
+}
+#clip{
+    width: 20px;
+     cursor: pointer;
+     margin-right: 5px;
+}
+#msg{
+    width: 32px;
+}
+#inbox{
+    margin-left: 20px;
+    margin-bottom:20px ;
+    background: transparent;
+    background-color: transparent;
+    display: flex;
+    border: none;
+}
+#send{
+    margin-left: 6px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+   margin-right:10px;
+    /* border-radius:50%; */
+    border: 1px solid black;
+    height:40px;
+     background-color:blue;
+     border-radius: 10px;
+
+
+
+}
+i{
+    font-size:20px;
+    color:black;
+}
+
+#send:hover{
+    background-color:rgba(0,0,255,0.80);
+    color:white;
+}
+#input{
+    width:575px;
+    height: 40px;
+    border-radius: 200px;
+    padding-left: 24px;
+    margin-left:20px;
+    overflow-y: scroll;
+    /* border:none; */
+    border: 1px solid black;
+    margin-bottom:20px;
+    margin-top:4px;
+    font-size:15px;
+    outline: none;
+    min-height: 0;   
+}
+
+    
+
+/* .msg{
+    border:1px solid black;
+    height: 50px;
+     border-radius: 200px;
+     display:flex;
+     justify-content:center;
+    
+} */
+#header{
+ display: flex;
+ align-items: center;
+  position: absolute;
+ top: 0px;
+ width: 100%;
+ justify-content: center;
+ font-family: Arial, Helvetica, sans-serif;
+ 
+}
+marquee{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+#img{
+    width: 100px;
+}
+#hed{
+    width: 100%;
+    height:80px;
+    background-color:rgb(255, 254, 254);
+      overflow: hidden; 
+}
+#vid{
+    width: 240px;
+    height: 70px;
+    object-fit:cover;
+    object-fit:contain;
+}
+#chatArea{
+    /* background-color: black; */
+    width: 100%;
+    background-image: url('theme1.jpg');
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+     flex: 1;
+    min-height: 0;    /* yeh line add karo - zaroori hai */
+    overflow-y: scroll;
+    gap: 10px;
+    margin-bottom: 20px;
+     /* outline: 3px solid red;  */
+
+}
+.boat{
+     background-image: linear-gradient(to right, #ff00d4, #0072ff);
+    color: white;
+    width: fit-content;
+    max-width: 70%;
+     padding: 10px 15px;
+    height: auto;
+    border-radius: 55px;
+    text-align: center;
+    display: flex;
+    /* align-self: flex-end; */
+    justify-content: center;
+    border-top-left-radius: 6px;
+    /* background-color: aqua;
+    width: 150px;
+    height: 50px;
+    border-radius: 55px;
+    border-bottom-left-radius: 6px; /*claude*/
+   /* text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden; */
+    margin-bottom:10px;
+}
+.usr{
+    background-color: blue;
+    color: white;
+    width: fit-content;
+    max-width: 70%;
+     padding: 10px 15px;
+    height: auto;
+    border-radius: 55px;
+    text-align: center;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    border-top-right-radius: 6px;
+    /* overflow:hidden; */
+    margin-bottom:10px;
+}
+.boatmg{
+    background-color: aqua;
+     width: fit-content;
+    max-width: 70%;
+     padding: 10px 15px;
+    height: auto;
+    border-radius: 55px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    border-bottom-left-radius: 6px;
+}
+@media(max-width: 780px){
+    #container{
+       max-width:90%;
+    margin: 40px auto;
+    height: 70%;
+   border-radius: 16px;
+    overflow: hidden;
+    height: 750px;
+    margin-top: 100px;
+    }
+    #send{
+        margin-left: 0px;
+        
+    }
+    #input{
+         width:350px;
+    }
+    #msg{
+        width:20px;
+        height:20px;
+
+    }
+}
+#button{
+    position:absolute;
+    top:20px;
+    right:100px;
+    margin-top:10px;
+    background-color:blue;
+    width:150px;
+    outline:none;
+    border:none;
+    height:35px;
+    border-radius: 20px;
+    color:white;
+    font-weight: 600;
+    cursor:pointer;
+    margin:0 auto;
+    margin-bottom:0px;
+
+}
+#button:hover{
+    background-color:rgba(0,0,255,0.80)
+}
